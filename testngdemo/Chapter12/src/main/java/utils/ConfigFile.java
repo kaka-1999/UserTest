@@ -5,6 +5,9 @@ import model.InterfaceName;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * 添加备注
+ */
 public class ConfigFile {
     private static ResourceBundle bundle = ResourceBundle.getBundle("application", Locale.CHINA);
 

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a0f11a6-7a26-48f6-8c43-98eb5962a6fe" name="Default Changelist" comment="" />
+    <list default="true" id="7a0f11a6-7a26-48f6-8c43-98eb5962a6fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10/Chapter10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/java/utils/ConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/java/utils/ConfigFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter6/Chapter6.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +43,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -233,6 +244,7 @@
       <workItem from="1585289138073" duration="637000" />
       <workItem from="1585292798616" duration="8547000" />
       <workItem from="1585536599520" duration="1788000" />
+      <workItem from="1585555555331" duration="120000" />
     </task>
     <servers />
   </component>
@@ -243,10 +255,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1585038477630">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1585555660054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1585038477630" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1585555660054" />
     <state x="507" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584681778173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,6 +275,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585191366334" />
+    <state x="515" y="110" key="CommitChangelistDialog2" timestamp="1585555785749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="515" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585555785749" />
     <state x="468" y="278" key="FileChooserDialogImpl" timestamp="1585548284444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
