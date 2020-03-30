@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="用户管理系统测试套件">
+    <test name="用户管理测试">
+        <classes>
+            <class name="cases.LoginTest">
+                <methods>
+                    <includ name="loginTest"/>
+                    <includ name="loginFail"/>
+                </methods>
+            </class>
+            <class name="cases.AddUserTest">
+                <methods>
+                    <includ name="addUser"/>
+                </methods>
+            </class>
+            <class name="cases.GetUserInfoTest">
+                <methods>
+                    <includ name="getUser"/>
+                </methods>
+            </class>
+            <class name="cases.GetUserListTest">
+                <methods>
+                    <includ name="getUserList"/>
+                </methods>
+            </class>
+<!--            <class name="cases.UpdateUserTest">-->
+<!--                <methods>-->
+<!--                    <includ name="updateUser"/>-->
+<!--                    <includ name="deleteUser"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

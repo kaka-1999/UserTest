@@ -1,0 +1,22 @@
+[
+  {
+    "description": "带header信息的请求",
+    "request": {
+      "uri": "/startupHeader",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "header",
+        "sex": "wuoan"
+      }
+    },
+    "response": {
+      "json": {
+        "status": 1,
+        "name": "header"
+      }
+    }
+  }
+]

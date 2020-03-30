@@ -1,0 +1,26 @@
+[
+  {
+    "description": "模拟没有参数的post请求",
+    "request": {
+      "uri": "/startupPost_NoParam",
+      "method": "post"
+    },
+    "response": {
+      "text": "这是一个没有参数mock的post请求"
+    }
+  },
+  {
+    "description": "模拟有参数mock的post请求",
+    "request": {
+      "uri": "/startupPost_Param",
+      "method": "post",
+      "forms": {
+        "name": "zhangsan",
+        "age": "10"
+      }
+    },
+    "response": {
+      "text": "这是一个有参数mock的post请求"
+    }
+  }
+]

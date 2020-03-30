@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!-- 子节点<property> ：用来定义变量值，它有两个属性name和value，通过<property>定义的值会被插入到logger上下文中，可以使“${}”来使用变量。-->
+    <property name="LOG_HOME" value="/export/Logs/youxi"/>
+
+    <!--子节点<appender>：负责写日志的组件，它有两个必要属性name和class。name指定appender名称，class指定appender的全限定名-->
+    <!-- ConsoleAppender 控制台输出日志 -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- 设置日志输出格式 -->
+            <pattern>[%d{yyyy/MM/dd HH:mm:ss.SSS}][%p][%logger{0}:%L] %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+  <appender name="LogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/youxi.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/youxi.log.%d{yyyy-MM-dd}</fileNamePattern>
+        </rollingPolicy>
+        <!-- <encoder>：对记录事件进行格式化。负责两件事，一是把日志信息转换成字节数组，二是把字节数组写入到输出流。-->
+        <!-- PatternLayoutEncoder 是唯一有用的且默认的encoder ，有一个<pattern>节点，用来设置日志的输入格式。使用“%”加“转换符”方式，如果要输出“%”，则必须用“\”对“\%”进行转义。-->
+        <encoder>
+            <pattern>%p %d{yyyy-MM-dd HH:mm:ss} %logger - %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="PokerMqListenerLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/mq/poker-mq.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/mq/poker-mq.log.%d{yyyy-MM-dd}</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%p %d{yyyy-MM-dd HH:mm:ss} %logger - %m%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="com.jd.station.soa.message.listener.PokerActivityInfoMqListener" level="INFO" additivity="false">
+        <appender-ref ref="PokerMqListenerLogFile"/>
+    </logger>
+
+    <logger name="jdbc.sqltiming" level="info"/>
+    <logger name="com.ibatis" level="info"/>
+    <logger name="com.ibatis.common.jdbc.SimpleDataSource" level="info"/>
+    <logger name="com.ibatis.common.jdbc.ScriptRunner" level="info"/>
+    <logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="info"/>
+    <logger name="java.sql.Connection" level="info"/>
+    <logger name="java.sql.Statement" level="info"/>
+    <logger name="java.sql.PreparedStatement" level="info"/>
+    <logger name="java.sql.ResultSet" level="info"/>
+
+    <root level="INFO">
+        <appender-ref ref="console"/>
+        <appender-ref ref="LogFile"/>
+    </root>
+
+</configuration>

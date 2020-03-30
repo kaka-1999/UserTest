@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="用户管理系统测试套件" duration-ms="10130" started-at="2020-03-27T08:26:12Z" finished-at="2020-03-27T08:26:22Z">
+    <groups>
+      <group name="LoginTure">
+        <method signature="AddUserTest.addUser()[pri:0, instance:cases.AddUserTest@69379752]" name="addUser" class="cases.AddUserTest"/>
+        <method signature="GetUserInfoTest.getUserInfo()[pri:0, instance:cases.GetUserInfoTest@27fe3806]" name="getUserInfo" class="cases.GetUserInfoTest"/>
+        <method signature="GetUserListTest.getUserList()[pri:0, instance:cases.GetUserListTest@5f71c76a]" name="getUserList" class="cases.GetUserListTest"/>
+        <method signature="LoginTest.loginTest()[pri:0, instance:cases.LoginTest@17baae6e]" name="loginTest" class="cases.LoginTest"/>
+      </group> <!-- LoginTure -->
+    </groups>
+    <test name="用户管理测试" duration-ms="10130" started-at="2020-03-27T08:26:12Z" finished-at="2020-03-27T08:26:22Z">
+      <class name="cases.AddUserTest">
+        <test-method status="PASS" signature="addUser()[pri:0, instance:cases.AddUserTest@69379752]" name="addUser" duration-ms="3042" started-at="2020-03-27T16:26:16Z" description="新增用户用例" finished-at="2020-03-27T16:26:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- cases.AddUserTest -->
+      <class name="cases.GetUserInfoTest">
+        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:cases.GetUserInfoTest@27fe3806]" name="getUserInfo" duration-ms="3052" started-at="2020-03-27T16:26:19Z" description="查询用户信息" finished-at="2020-03-27T16:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserInfo -->
+      </class> <!-- cases.GetUserInfoTest -->
+      <class name="cases.GetUserListTest">
+        <test-method status="PASS" signature="getUserList()[pri:0, instance:cases.GetUserListTest@5f71c76a]" name="getUserList" duration-ms="93" started-at="2020-03-27T16:26:22Z" description="查询用户列表用例" finished-at="2020-03-27T16:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserList -->
+      </class> <!-- cases.GetUserListTest -->
+      <class name="cases.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cases.LoginTest@17baae6e]" name="beforeTest" is-config="true" duration-ms="370" started-at="2020-03-27T16:26:12Z" description="执行登录前的准备工作" finished-at="2020-03-27T16:26:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:cases.LoginTest@17baae6e]" name="loginTest" duration-ms="3560" started-at="2020-03-27T16:26:12Z" description="登录成功用例" finished-at="2020-03-27T16:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- cases.LoginTest -->
+    </test> <!-- 用户管理测试 -->
+  </suite> <!-- 用户管理系统测试套件 -->
+</testng-results>

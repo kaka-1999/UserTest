@@ -1,0 +1,43 @@
+[
+  {
+    "description": "这是一个带cookice的get请求",
+    "request": {
+      "uri": "/startupCookies_get",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "这是一个带cookice的get请求"
+    }
+  },
+  {
+    "description": "这是一个会返回Cookie信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true",
+        "status": "1000"
+      },
+      "text": "恭喜你获得cookie信息成功"
+    }
+  },
+  {
+    "description": "这是一个会携带Cookie信息的get请求",
+    "request": {
+      "uri": "/setCookies",
+      "method": "get",
+      "cookies": {
+        "login": "true",
+        "status": "1000"
+      }
+    },
+    "response": {
+      "text": "恭喜你携带cookie信息成功"
+    }
+  }
+]

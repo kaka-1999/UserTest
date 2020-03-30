@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis">
+    <select id="GetLogCount" resultType="Integer">
+        select count(*) from update_log;
+    </select>
+    <insert id="AddLog" parameterType="com.mybatis.model.UpdateLog">
+      insert into update_log(content,create_time,update_time,operator_id,title) values (#{content},#{create_time},#{update_time},#{operator_id},#{title})
+  </insert>
+    <update id="UpdateLog" parameterType="com.mybatis.model.UpdateLog">
+        update update_log set content=#{content} where id=#{id}
+    </update>
+    <delete id="DeleteLog" parameterType="Integer">
+        delete from update_log where id=#{id}
+    </delete>
+</mapper>

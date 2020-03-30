@@ -1,0 +1,17 @@
+server:
+  port: 8800
+logging:
+  path: logs
+  file: mylog.log
+spring:
+  application:
+    name: myTest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.240:3306/pnp_test_only
+    username: root
+    password: 123456
+mybatis:
+  type-aliases-package: com.model
+  mapper-locations:
+    - mapper/*

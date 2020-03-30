@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="suitename">
+    <test name="runall">
+        <classes>
+            <class name="org.test.group.GroupsOnClass1"></class>
+            <class name="org.test.group.GroupsOnClass2"></class>
+            <class name="org.test.group.GroupsOnClass3"></class>
+        </classes>
+    </test>
+    <test name="onlyrun">
+        <groups>
+            <run>
+                <include name="teacher"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.test.group.GroupsOnClass1"></class>
+            <class name="org.test.group.GroupsOnClass2"></class>
+            <class name="org.test.group.GroupsOnClass3"></class>
+        </classes>
+    </test>
+</suite>

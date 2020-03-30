@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="测试测试报告的suite">
+    <test name="测试测试报告的test">
+        <classes>
+            <class name="com.tester.demo.TestMethodsDemo"></class>
+            <methods>
+                <include name="test1"/>
+                <include name="test2"/>
+                <include name="test3"/>
+                <include name="logDemo"/>
+            </methods>
+        </classes>
+    </test>
+    <listeners>
+       <!-- <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>
+       调用新增的监听类，解决css展示不了的问题
+       -->
+        <listener class-name="com.tester.demo.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

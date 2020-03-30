@@ -1,0 +1,23 @@
+[
+  {
+    "description": "这是一个带cookice的post请求",
+    "request": {
+      "uri": "/startupCookies_post",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "stu": "kaka",
+        "age": "88"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "name": "test",
+        "age": "20"
+      }
+    }
+  }
+]
